@@ -26,7 +26,7 @@ BreachType inferBreach(double value, double lowerLimit, double upperLimit) {
 
 BreachType classifyTemperatureBreach(
     CoolingType coolingType, double temperatureInC) {
-  auto limits = coolingLimits[coolingType];
+  auto limits = coolingLimits.at(coolingType);
   return inferBreach(temperatureInC, limits.first, limits.second);
 }
 
