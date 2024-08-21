@@ -52,5 +52,5 @@ void sendToController(BreachType breachType) {
 void sendToEmail(BreachType breachType) {
   const char* recepient = "a.b@c.com";
   printf("To: %s\n", recepient);
-  printf("%s", emailMessages[breachType].c_str());
+  printf("%s", emailMessages.at(breachType).c_str());
 }
